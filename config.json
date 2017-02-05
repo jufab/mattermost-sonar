@@ -1,0 +1,15 @@
+{
+    "server" : {
+        "port" : "8080"
+    },
+    "mattermosts" : 
+        {
+            "webhook_url" : "http://192.168.99.101:8065/hooks/cn1ff1ez7byu5ccjbw4itfse4c",
+            "channel": "sonar",
+            "username": "sonar",
+            "icon_url": "https://www.sonarqube.org/assets/logo-31ad3115b1b4b120f3d1efd63e6b13ac9f1f89437f0cf6881cc4d8b5603a52b4.svg"
+        },
+    "sonar" : {
+        "url" : "http://192.168.99.101:9000"
+    }
+}

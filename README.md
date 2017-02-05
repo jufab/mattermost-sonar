@@ -1,2 +1,6 @@
 # mattermost-sonar
-Serveur interceptant les webhooks de SonarQube pour les restituer dans Mattermost
+Webhook SonarQube to Mattermost
+
+=> https://docs.sonarqube.org/display/SONAR/Webhooks
+
+Work in progress

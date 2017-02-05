@@ -1,0 +1,32 @@
+{
+  "username": "Sonar",
+  "icon_url": "https://www.sonarqube.org/assets/logo-31ad3115b1b4b120f3d1efd63e6b13ac9f1f89437f0cf6881cc4d8b5603a52b4.svg",
+  "attachments": [
+    {"color": "#DF3623",
+        "text": "|  Project     | Quality Gate  |  Status             |
+        |:-------------|:--------------|:--------------------|
+        | Project Name | SonarWay      | :white_check_mark:  |",
+        "title": "Project Name",
+        "title_link": "http://sonar.url"        
+    },
+    {
+    "color": "#DF3623",
+        "text": "**Security** : :warning: C   :arrow_upper_right:"
+    },
+    {
+      "color": "#DF3623",
+          "text": "Reability: :warning: C   :arrow_upper_right:"
+    },
+    {
+      "color": "#DF3623",
+          "text": "Maintainability: :warning: C   :arrow_upper_right:"
+    },
+    {
+      "color": "#DF3623",
+          "text": ":white_check_mark: 88,8%25 :arrow_lower_right:"
+    },
+    {
+      "image_url": "https://www.sonarqube.org/assets/logo-31ad3115b1b4b120f3d1efd63e6b13ac9f1f89437f0cf6881cc4d8b5603a52b4.svg"	  
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "name": "mattermost-sonar",
+  "version": "0.0.1",
+  "description": "Webhook SonarQube To Mattermost",
+  "main": "server.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "jsonfile": "^2.4.0",
+    "restify": "^4.3.0",
+    "underscore": "^1.8.3"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "gulp": "^3.9.1",
+    "gulp-mocha": "^3.0.1",
+    "sinon": "^1.17.7"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "test": "mocha tests --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jufab/mattermost-sonar.git"
+  },
+  "keywords": [
+    "SonarQube",
+    "Mattermost",
+    "Webhook"
+  ],
+  "author": "Julien Fabre",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jufab/mattermost-sonar/issues"
+  },
+  "homepage": "https://github.com/jufab/mattermost-sonar#readme"
+}

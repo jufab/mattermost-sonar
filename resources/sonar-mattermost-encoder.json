@@ -1,0 +1,50 @@
+{ 
+    "OK" : 
+    {
+        "text" : "OK",
+        "color": "#23DF55",
+        "icon" : ":white_check_mark:"
+    },
+     "blank" : 
+    {
+        "text" : "NO",
+        "color": "#FFFFFF",
+        "icon" : "!"
+    },
+    "KO" : 
+    {
+        "text" : "ERROR",
+        "color": "#DF3623",
+        "icon" : ":warning:"
+    },
+    "GREATER_THAN" : 
+    {
+        "text" : "GREATER_THAN",
+        "icon" : " :arrow_upper_right:"
+    },
+    "LESS_THAN" : 
+    {
+        "text" : "LESS_THAN",
+        "icon" : " :arrow_lower_right:"
+    },
+    "security" : {
+        "metric" : "new_security_rating",
+        "text"  : "security",
+        "title"  : "Security"
+    },
+    "reability" : {
+        "metric" : "new_reliability_rating",
+        "text"  : "reability",
+        "title"  : "Reability"
+    },
+    "maintainability" : {
+        "metric" : "new_maintainability_rating",
+        "text"  : "maintainability",
+        "title"  : "Maintainability"
+    },
+    "coverage" : {
+        "metric" : "new_coverage",
+        "text"  : "coverage",
+        "title"  : "Coverage"
+    }
+}

@@ -1,0 +1,23 @@
+{
+    "projectName": "",
+    "url" : "",
+    "qualityGate":"",
+    "status" : "",
+    "security": {
+        "operator":"",
+        "status":""
+    },
+    "reability":{
+        "operator":"",
+        "status":""
+    }, 
+	"maintainability": {
+        "operator":"",
+        "status":""
+    },
+	"coverage": {
+        "operator":"",
+        "status":"",
+        "value":""
+    }
+}
