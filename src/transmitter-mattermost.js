@@ -18,7 +18,7 @@ TransmitterMattermost.prototype.loadConfigFile = function() {
 };
 
 TransmitterMattermost.prototype.pushToMattermost = function(mattermostMessage) {
-    this._clientApi.post("",mattermostMessage);
+    this._clientApi.post("",mattermostMessage, function() {});
 };
 
 TransmitterMattermost.prototype.getClientApi = function()  {
