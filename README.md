@@ -1,7 +1,7 @@
 # mattermost-sonar
 
 [![Build Status](https://travis-ci.org/jufab/mattermost-sonar.svg?branch=master)](https://travis-ci.org/jufab/mattermost-sonar)
-
+[![Quality Gate](https://sonarqube.com/api/badges/gate?key=mattermost-sonar)](https://sonarqube.com/dashboard/index/mattermost-sonar)
 
 Webhook SonarQube to Mattermost
 
