@@ -18,4 +18,4 @@ script:
   - gulp test
 
 after_success:
-  - sonar-scanner
+  - sonar-scanner -X
