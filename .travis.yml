@@ -1,19 +1,17 @@
 language: node_js
 node_js:
-  - "6"
+- '6'
 dist: trusty
 sudo: required
-
-
 addons:
   sonarqube:
-    token : $SONAR_TOKEN
+    token: 
+     secure: zDURbQn+ZishlttEYJxHLtMQWP3704xXSPAY9u36q5EngZMtXVFOtDG5VwT2CWtiBJCumoeLL22g6cgDWUlnt2+mL9tG2LKF6SuWUfehuiVcTgEnRKVm7mscyYdbZKG+Fy0iimWNe6PF7raiMQ9RcufRlSyyxhlSmGVeHDOxYBkFlAK391M/o/HiHne5zJgslOfiRlEMr2hlFG2/X1+s4UZpt3GfhAtj5GGZiTUgMEKWgC9zzvgBlM6bOr4AKhAb8T2dOio4xYBC8tFLAVejNi13V9d39xD/QDCmHVYyXvcwvoE3HxWElDla6dNQuhTkiXm/t0q+OviU8/eOxJ2An1L2AMRrm11Xc+PJ0rxlMOCczcuZug21cXjW9aBPio5VgNHydiI6DNJ8ovOrkouXx/qwQRF2i3H54nR1U65EeKxcBcB59LJjvHz6st+55DpTvqsRXIqWALY0+v0QPDdkKaUa4LSRnoNb/TGDHLmfnhsF8d+UCJRm5IwJHm3FpiSLci/BWLEP14PSZ+2MiFCPAIb+CobbchUXl/5JWqUO4WiWGlabUflY+fZe7ir0b4K6dz8klZXSfxv05o9Q9g4E0PQrjle4A1ygRmLz2WWS6P7vig4VUKWAxIL1vnXl9J531HoTRViwMZ25u7tpp0NFwvIw2BbIFc8fncyAIWQ5nHo=
 
 before_script:
-  - npm install -g gulp
-
+- npm install -g gulp
 script:
-  - gulp test
-
+- gulp test
 after_success:
-  - sonar-scanner -X
+- sonar-scanner
+   
