@@ -1,6 +1,11 @@
 dist: trusty
 sudo: required
 
+addons:
+  sonarqube:
+    token:
+      secure: "OQaO+ZjILkgXMOVeAwTLngevPPn2jlipNtXs8Q5ODIwGGGlHHXkIQX5xlbL6LjiKLWorsiffGpEuL+5rlwdWhPcYw7xCku1gb6RBdw/yu/17zpBJE9ZjaU1xglYtdSmqjNQxR4E79X3TYIjO3BpjEmP8Pq0dXEjsYFaZuVPvDebOQf1DPs155H58HQGF+29+5/l81ylrQ24fTZbGBOIZtSKVpyor77Wk9bpP9x1hPq5yRjAZK8MAXXypiCSS3Iekxn0ymZHh+fm/CVTINRn0bIPaF/I/vu4ScJSzp91hpjOPRBUu/OODf8ttdBfhoykFX1ijUWuXVu2naeo4+jdYMaNL5npDkJ5EuxkHo/ainZJbVdH9i08aB0yFNPWG1z+Ic8ovDfgMvmPfCtPcsy+WENNVmlrfgMQwwzZ9oWqSsGba2cm3Jez1xwNHVzfTR4ne78iDg60s9H4tWxBhoEM9b0HNf/A/Y8HDEKHxvmnG+lzWQAF1o+bdIZvtr8Vxb/waH+k4N24cXYNPtlMHOBwpvTIwrpf8USrzmYpoKLdBUpQLulW9VabpPaNSgyvIrjlnXmTsIQ8poYHH/ICHZStRZHQO6ujKCjZfGtqR+3VLkl2pkbtQ+1U41uoeoYqUy1XwYzDfTWylvK8sQHv45tm4fxjbJLgLtjHEqqm4sstmQTs="
+
 
 language: node_js
 node_js:
