@@ -4,8 +4,6 @@ node_js:
 dist: trusty
 sudo: required
 
-jdk:
-  - oraclejdk8
 
 addons:
   sonarqube:
