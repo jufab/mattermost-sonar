@@ -4,3 +4,10 @@ node_js:
 before_script:
   - npm install -g gulp
 script: gulp test
+
+addons:
+  sonarqube:
+    token:
+      secure: SONAR_TOKEN
+script:
+  - sonar-scanner
