@@ -9,7 +9,7 @@ function TransmitterMattermost(configFile) {
     }
     this._clientApi="";
     this.loadConfigFile();
-};
+}
 
 TransmitterMattermost.prototype.loadConfigFile = function() {
     if(!_.isUndefined(this._configFile) && !_.isEmpty(this._configServer)){    
@@ -18,9 +18,7 @@ TransmitterMattermost.prototype.loadConfigFile = function() {
 };
 
 TransmitterMattermost.prototype.pushToMattermost = function(mattermostMessage) {
-    this._clientApi.post("",mattermostMessage, function(err, req, res, data) {
-        if(err) console.log("An error ocurred : ", err);
-    });
+    this._clientApi.post("",mattermostMessage);
 };
 
 TransmitterMattermost.prototype.getClientApi = function()  {
