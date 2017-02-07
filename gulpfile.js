@@ -29,7 +29,7 @@ gulp.task('test', ['pre-test'], function() {
         .pipe(istanbul.enforceThresholds({thresholds: {global: 80}}))
 });
 
-gulp.task('cover-travisci', function() {
+gulp.task('cover-coveralls', function() {
     coveralls.getOptions = coveralls.getBaseOptions;
     var fileName = './lcov.info';
     fs.readFile(fileName, 'utf8', function(err, fileContent) {
