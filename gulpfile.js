@@ -5,7 +5,7 @@ var coveralls = require('coveralls');
 var fs = require('fs');
 
 gulp.task('pre-test', function () {
-    return gulp.src(['server.js','src/*.js'])
+    return gulp.src(['*.js','src/*.js','!**/*-test.js'])
     // Covering files
         .pipe(istanbul())
         // Force `require` to return covered files
@@ -18,7 +18,7 @@ gulp.task('test', ['pre-test'], function() {
         // Creating the reports after tests ran
         .pipe(istanbul.writeReports(
             {
-                dir: '.',
+                dir: './coverage',
                 reporters: [ 'lcovonly','text', 'text-summary' ],
                 reportOpts: {
                     lcov: {dir: 'lcovonly', file: 'lcov.info'}
@@ -31,7 +31,7 @@ gulp.task('test', ['pre-test'], function() {
 
 gulp.task('cover-coveralls', function() {
     coveralls.getOptions = coveralls.getBaseOptions;
-    var fileName = './lcov.info';
+    var fileName = './coverage/lcov.info';
     fs.readFile(fileName, 'utf8', function(err, fileContent) {
         if (err) {
             console.error("Failed to read file '" + fileName + "', with error: " + err);
