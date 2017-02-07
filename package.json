@@ -13,6 +13,7 @@
   },
   "dependencies": {
     "jsonfile": "^2.4.0",
+    "loglevel": "^1.4.1",
     "restify": "^4.3.0",
     "underscore": "^1.8.3"
   },
@@ -27,7 +28,7 @@
   },
   "scripts": {
     "start": "node server.js",
-    "test": "mocha tests --recursive"
+    "test": "gulp test"
   },
   "repository": {
     "type": "git",

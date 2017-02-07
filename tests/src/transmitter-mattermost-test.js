@@ -1,8 +1,6 @@
 var chai = require('chai');
-var expect = chai.expect;
 var assert = chai.assert;
 chai.should();
-var sinon = require('sinon');
 var restify = require('restify');
 var TransmitterMattermost = require('./../../src/transmitter-mattermost');
 var resultRequest="";
@@ -35,7 +33,7 @@ describe('TransmitterMattermost', function() {
   });
   it('pushToMattermost should execute on fake-mattermost', function() {
     var transmitterMattermost = new TransmitterMattermost("./tests/resources/config-test.json");
-    var test = transmitterMattermost.pushToMattermost({"payload" : {"message" : "world"}});
+    transmitterMattermost.pushToMattermost({"payload" : {"message" : "world"}});
     assert(true);
   });
   after(function() {

@@ -1,6 +1,7 @@
 var _ = require('underscore');
 var jsonFile = require('jsonfile');
 var restify = require('restify');
+var log = require('loglevel');
 
 function TransmitterMattermost(configFile) {
     this._configFile = configFile;
@@ -18,7 +19,9 @@ TransmitterMattermost.prototype.loadConfigFile = function() {
 };
 
 TransmitterMattermost.prototype.pushToMattermost = function(mattermostMessage) {
-    this._clientApi.post("",mattermostMessage, function() {});
+    this._clientApi.post("",mattermostMessage, function(err, req, res, obj) {
+        log.info('%j', obj);
+    });
 };
 
 TransmitterMattermost.prototype.getClientApi = function()  {

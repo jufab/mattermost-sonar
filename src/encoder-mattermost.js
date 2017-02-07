@@ -1,12 +1,10 @@
 var _ = require('underscore');
 var Encoder = require('../resources/sonar-mattermost-encoder.json');
-var fs = require("fs");
 
 
 function EncoderMattermost(sonarUrl) {
     this._sonarUrl = sonarUrl;
 }
-
 
 
 EncoderMattermost.prototype.encodeSonarMessage = (messageSonar) => {
@@ -15,7 +13,7 @@ EncoderMattermost.prototype.encodeSonarMessage = (messageSonar) => {
     } else {        
         var message="{\"username\": \"Sonar\",\"icon_url\": \"https://docs.sonarqube.org/download/attachments/360449/global.logo\",\"attachments\": [{";
         var statusQuality=Encoder.KO;
-        if(messageSonar.qualityGate.status==Encoder.OK.text) {
+        if(messageSonar.qualityGate.status===Encoder.OK.text) {
             statusQuality = Encoder.OK;
         }
         message += "\"color\": \""+statusQuality.color+"\",";  
